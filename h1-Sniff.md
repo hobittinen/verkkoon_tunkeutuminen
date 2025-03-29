@@ -18,6 +18,7 @@ Aloitin tehtävän tekemisen 29.3.2025 klo 23.52 avaamalla virtuaalikoneeni. Sen
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/e853d16c-6e8e-4288-898f-0e1aab56a396" />
 
 Sain selville Ethernetin olevan enp0s3. Jotta saisin virtuaalikoneen Internet-yhteyden pois päältä, syötin seuraavan komennon:
+   
     sudo ip link set enp0s3 down.
 
 Tarkistin komennon toiminnon siirtymällä virtuaaalikoneessa selaimeen, Firefoxiin. Laitoin hakusanaksi Youtube.com. Sain seuraavanlaisen näkymän.
@@ -25,6 +26,7 @@ Tarkistin komennon toiminnon siirtymällä virtuaaalikoneessa selaimeen, Firefox
 <img width="634" alt="image" src="https://github.com/user-attachments/assets/a9dff791-7133-4dd2-8799-b3016792d09d" />
 
 Virtuaalikoneeni Internet-yhteys oli selkeästi pois päältä. Seuraavaksi piti laittaa se takaisin päälle. Siihen käytin komentoa:
+    
     sudo ip link set enp0s3 up
 
 Kuten aiemminkin, kävin nytkin tarkastamassa toiminnon toimivuuden Firefoxissa.
