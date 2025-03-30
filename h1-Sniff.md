@@ -34,3 +34,27 @@ Kuten aiemminkin, kävin nytkin tarkastamassa toiminnon toimivuuden Firefoxissa.
 <img width="509" alt="image" src="https://github.com/user-attachments/assets/af840609-5986-4fb0-aef6-2922c9291821" />
 
 Kuten kuvasta näkee, Internet-yhteys oli saatu takaisin päälle! Sain tehtävän päätökseen 30.3.2025 klo 0.01.
+
+### c) Wireshark
+Palasin takaisin tehtävien pariin 30.3.2025 klo 11.38. Kuten viime yönä, myös nyt aloitin tehtävänteon käynnistämällä virtuaalikoneeni. Tosin jouduin melkeinpä heti palaamaan takaisin fyysiselle koneelle, koska enhän minä osannut asentaa Wiresharkia! Hain ohjenuoran Wiresharkiin Tero Karvisen [verkkosivulta](https://terokarvinen.com/wireshark-getting-started/). Löydettyäni hyödylliset komennot, suuntasin takaisin virtuaalikoneen komentoriville. Syötin sinne seuraavat komennot:
+
+    sudo apt-get update
+    sudo apt-get install wireshark
+
+Seuraavaksi vuorossa olikin itseni lisääminen sniff-porukkaan! Suoritin sen kuvassa näkyvällä tavalla.
+
+<img width="236" alt="image" src="https://github.com/user-attachments/assets/70d78ff4-7f1c-4332-95f5-6e34e4d5d21d" />
+
+Nyt kun olin päässyt sniff-porukkaan mukaan, päätin siepata liikennettä Wiresharkilla. Suoritin sen seuraavalla komennolla.
+
+    wireshark
+
+Syötettyäni ylläolevan komennon, eteeni aukesi kuvan näkymä.
+
+<img width="380" alt="image" src="https://github.com/user-attachments/assets/8fabdbf5-6bc6-4e76-8238-9ed069e79f98" />
+
+Luonnollisesti valitsin siepattavaksi liikenteeksi Ethernettini. Valittuani sen, siirryin virtuaalikoneen selaimeen ja näpyttelin sinne Reddit.com.
+
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/2ecfadc9-726c-4cfc-a49a-a69a12101ff2" />
+
+Siepattuani tarpeeksi liikennettä, pysäytin Wiresharkin ja poistuin sieltä. Tehtävä tuli valmiiksi klo 12.07.
