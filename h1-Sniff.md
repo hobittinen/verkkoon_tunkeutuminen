@@ -9,6 +9,8 @@
 
 ## Tehtävät
 
+### Kaikissa tehtävissä on käytetty lähteenä Tero Karvisen verkkosivuilta löytyvää [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/)
+
 ### a) Linux
 Asensin Debian Linuxin virtuaalikoneeseen käyttäen Tero Karvisen [ohjetta](https://terokarvinen.com/2021/install-debian-on-virtualbox/).
 
@@ -58,3 +60,20 @@ Luonnollisesti valitsin siepattavaksi liikenteeksi Ethernettini. Valittuani sen,
 <img width="377" alt="image" src="https://github.com/user-attachments/assets/2ecfadc9-726c-4cfc-a49a-a69a12101ff2" />
 
 Siepattuani tarpeeksi liikennettä, pysäytin Wiresharkin ja poistuin sieltä. Tehtävä tuli valmiiksi klo 12.07.
+
+### d) Oikeesti TCP/IP
+Paluu tehtävien pariin tapahtui 31.3.2025 klo 15.35, kun avasin [kurssisivun](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/). Nyt oli vuorossa TCP/IP-mallin osoittamista. Siirryin virtuaalikoneelle, jolla luonnollisesti tekisin tehtävän. Koneelle kirjautumisen jälkeen tieni vei komentoriville. Syötin sinne aikaisemmasta tehtävästä tutun komennon.
+
+    wireshark
+
+Komento sai aikaiseksi seuraavan näkymän.
+
+<img width="502" alt="image" src="https://github.com/user-attachments/assets/138c1795-33cd-490d-bb28-421f8d20f6c9" />
+
+Valitsin siepattavaksi verkkoliitännäksi enp0s3. Valitsin paketin ja otin seuraavan kuvan, johon merkitsin TCP/IP-mallin kerroksia.
+
+<img width="513" alt="tcpip" src="https://github.com/user-attachments/assets/28e67664-6cc3-4128-8859-ca44764ce124" />
+
+Kuvassa oranssilla rajattu alue on verkkokerros. Se sisältää MAC-osoitteet, joita paketin siirrossa tarvitaan. Vaaleansinisellä alueella rajattu alue on Internet-kerros, joka sisältää sekä lähde- että kohde-IP:n. Molempia IP:tä käytetään paketin reitittämiseen. Punaisella rajattu alue taasen on kuljetuskerros. Sieltä löytyy lähde- ja kohdeportit, joiden avulla TCP hallitsee tietoliikennettä. Sovelluskerrosta ei kuvasta suoraan näy, koska paketti liittyy HTTPS-liikenteeseen, joka käyttää TLS-salausta.
+
+Tehtävä tuli valmiiksi 31.3.2025 klo 16.06.
