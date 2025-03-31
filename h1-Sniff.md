@@ -84,3 +84,30 @@ Pienen ruokatauon jälkeen palasin koneen äärelle 31.3.2025 klo 16.36. Avasin 
 Löysin kaappauksesta kaksi IP-osoitetta eli liikennettä oli kahden laitteen välillä. Löysin tämän tiedon "Statistics"-valikon "Endpoints"-välilehdeltä. Seuraavaksi tutkailin saman valikon "Protocol Hierarchy"-välilehteä. Sieltä sain selville, että IPv4-liikenne on hallitsevaa, TCP-protokollaa on käytetty eniten kuljetuksessa ja TLS-liikennettäkin löytyi. Viimeksi mainittu viittaa siihen, että verkkosivut käyttivät HTTPS-protokollaa. Kaapattuja paketteja oli 283. Kaappaus kesti noin seitsemän sekuntia, mikä viittaa esimerkiksi lyhyeen verkkosivun lataamiseen.
 
 Sain tehtävän valmiiksi 31.3.2025 klo 16.38.
+
+### g) Minkä merkkinen verkkokortti käyttäjällä on?
+Aloin selvittelemään käyttäjän verkkokorttia 31.3.2025 klo 17.15. Suuntasin tuttuun tapaan Wiresharkin pariin ja avasin siellä surfing-secure.pcapin. Tiedostosta etsin mistä tahansa paketista Ethernet II -osion, josta pystyisin selvittämään käyttäjän verkkokortin. Sain selville käyttäjän verkkokortin olevan RealTekU.
+
+<img width="325" alt="image" src="https://github.com/user-attachments/assets/6c7efbf9-523b-47fa-b675-cac82f421994" />
+
+Tehtävä tuli päätökseensä 31.3.2025 klo 17.25.
+
+### h) Millä weppipalvelimella käyttäjä on surffaillut?
+Kerrankin aloin tekemään tehtävää heti edellisen tehtävän jälkeen! Aloitin tämän tehtävän tekemisen tutkailemalla Wiresharkia. Kirjoitin hakuun seuraavan:
+
+    tls.handshake.extensions_server_name.
+    
+Tämä ei antanut mitään ihmeempää tietoa, joten suuntasin nokkani kohti Internetiä! Hetken metsästyksen jälkeen löysin [Wiresharkin verkkosivun](https://osqa-ask.wireshark.org/questions/55754/whata-a-display-filter-that-matches-dns-queries-for-a-particular-host-name/). Verkkosivulta sain altalöytyvän komennon.
+
+    dns.qry.name
+
+Komennolla pystyin näkemään, millä weppipalvelimilla käyttäjä on surffaillut! Löytyi google.com ja terokarvinen.com. Näiden tietojen myötä päätin tehtävän klo 17.48.
+
+### i) Analyysi
+Nopean tauon jälkeen päätin rutistaa vielä tämän viimeisenkin tehtävän. Tässä kohtaa kello oli 17.58. Palasin takaisin Wiresharkin pariin. Tosin avasin uuden ikkunan, koska nyt piti siepata omaa liikennettä. Valitsin verkkoliitynnäksi enp0s3. Sieppasin sen liikennettä neljän paketin verran ennen kuin pysäytin sieppaamisen.
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/86872025-3d59-4e45-aec1-4786aac1f16a" />
+
+Sain selville, ensimmäisen ja viimeisen, eli neljännen, paketin saapuneen hyvin lyhyen ajan sisällä toisistaan. Ei mikään ihme, kun liikennettä seurattiin vain muutaman paketin ajan. Paketit ovat mahdollisesti tulleet samasta TCP-istunnosta. Protokollana on toiminut TCP ja TLSv1.2. TCP on hoitanut luotettavan tiedonsiirron. Samalla TLSv1.2 on salannut tietoja ja varmistanut tietoturvaa sovellustasolla. Ensimmäisen ja viimeisen paketin lähdeosoitteena on ollut 10.0.2.15 ja kohdeosoitteena 34.117.188.166. Toisella ja kolmannella paketilla osoitteet olivat toisinpäin, eli lähdeosoite oli 34.11.188.166 ja kohdeosoite 10.0.2.15. Osoite 34.117.188.166 on etäkohteen, kun taas 10.0.2.15 on lähtöisin paikallisesta koneestani.
+
+Tehtävä tuli valmiiksi 18.17.
