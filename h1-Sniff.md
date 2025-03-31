@@ -77,3 +77,10 @@ Valitsin siepattavaksi verkkoliitännäksi enp0s3. Valitsin paketin ja otin seur
 Kuvassa oranssilla rajattu alue on verkkokerros. Se sisältää MAC-osoitteet, joita paketin siirrossa tarvitaan. Vaaleansinisellä alueella rajattu alue on Internet-kerros, joka sisältää sekä lähde- että kohde-IP:n. Molempia IP:tä käytetään paketin reitittämiseen. Punaisella rajattu alue taasen on kuljetuskerros. Sieltä löytyy lähde- ja kohdeportit, joiden avulla TCP hallitsee tietoliikennettä. Sovelluskerrosta ei kuvasta suoraan näy, koska paketti liittyy HTTPS-liikenteeseen, joka käyttää TLS-salausta.
 
 Tehtävä tuli valmiiksi 31.3.2025 klo 16.06.
+
+### e) Mitäs tuli surffattua?
+Pienen ruokatauon jälkeen palasin koneen äärelle 31.3.2025 klo 16.36. Avasin virtuaalikoneen ja suuntasin sen selaimella [kurssisivulle](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h1-sniff), jotta sain napattua virtuaalikoneelle surfing-secure.pcapin. Avasin tiedoston Wiresharkissa ja aloin tutkailemaan sitä.
+
+Löysin kaappauksesta kaksi IP-osoitetta eli liikennettä oli kahden laitteen välillä. Löysin tämän tiedon "Statistics"-valikon "Endpoints"-välilehdeltä. Seuraavaksi tutkailin saman valikon "Protocol Hierarchy"-välilehteä. Sieltä sain selville, että IPv4-liikenne on hallitsevaa, TCP-protokollaa on käytetty eniten kuljetuksessa ja TLS-liikennettäkin löytyi. Viimeksi mainittu viittaa siihen, että verkkosivut käyttivät HTTPS-protokollaa. Kaapattuja paketteja oli 283. Kaappaus kesti noin seitsemän sekuntia, mikä viittaa esimerkiksi lyhyeen verkkosivun lataamiseen.
+
+Sain tehtävän valmiiksi 31.3.2025 klo 16.38.
