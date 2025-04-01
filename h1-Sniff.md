@@ -3,8 +3,18 @@
 ## Tiivistelmät
 
 ### [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
+- Wireshark on verkon analysointiin käytettävä työkalu.
+- Jotta voi käyttää kaikkia Wiresharkin ominaisuuksia, pitää olla Wireshark-ryhmän jäsen.
+- Liikenteen erotteluun voi käyttää suodattimia, esim. dns, tls, http.
 
 ### [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
+- Verkkoliitäntä on vähän kuin "verkkokortti", mutta se ei välttämättä ole fyysinen laite.
+- Linuxissa verkkoliitäntöjen nimet määräytyvät systemd:n mukaan.
+- Etuliitteet määrittelevät käyttöliittymän tyypin.
+- Oman liittymät voi tarkastaa seuraavilla komennoilla:
+
+      ip a
+      ip route
 
 
 ## Tehtävät
@@ -110,4 +120,19 @@ Nopean tauon jälkeen päätin rutistaa vielä tämän viimeisenkin tehtävän. 
 
 Sain selville, ensimmäisen ja viimeisen, eli neljännen, paketin saapuneen hyvin lyhyen ajan sisällä toisistaan. Ei mikään ihme, kun liikennettä seurattiin vain muutaman paketin ajan. Paketit ovat mahdollisesti tulleet samasta TCP-istunnosta. Protokollana on toiminut TCP ja TLSv1.2. TCP on hoitanut luotettavan tiedonsiirron. Samalla TLSv1.2 on salannut tietoja ja varmistanut tietoturvaa sovellustasolla. Ensimmäisen ja viimeisen paketin lähdeosoitteena on ollut 10.0.2.15 ja kohdeosoitteena 34.117.188.166. Toisella ja kolmannella paketilla osoitteet olivat toisinpäin, eli lähdeosoite oli 34.11.188.166 ja kohdeosoite 10.0.2.15. Osoite 34.117.188.166 on etäkohteen, kun taas 10.0.2.15 on lähtöisin paikallisesta koneestani.
 
-Tehtävä tuli valmiiksi 18.17.
+Tehtävä tuli valmiiksi klo 18.17.
+
+
+## Lähteet
+
+### Kurssisivu
+Karvinen, T. (2025). Verkkoon tunkeutuminen ja tiedustelu. Haettu 31.3.2025, osoitteesta: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+### Asennus ja Wireshark
+Karvinen, T. (2021). Install Debian on VirtualBox. Haettu 29.3.2025, osoitteesta: https://terokarvinen.com/2021/install-debian-on-virtualbox/
+Karvinen, T. (2025). Wireshark - Getting Started. Haettu 30.3.2025, osoitteesta: https://terokarvinen.com/wireshark-getting-started/
+
+### Liikenteen kaappaus
+Karvinen, T. (2025). Network Interface Names on Linux. Haettu 30.3.2025, osoitteesta: https://terokarvinen.com/network-interface-linux/
+Karvinen, T. (2025). Wireshark - Getting Started. Haettu 30.3.2025, osoitteesta: https://terokarvinen.com/wireshark-getting-started/
+Wireshark Q&A. What a display filter that matches DNS queries for a particular host name? Haettu 31.3.2025, osoitteesta: https://osqa-ask.wireshark.org/questions/55754/whata-a-display-filter-that-matches-dns-queries-for-a-particular-host-name/
