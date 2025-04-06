@@ -45,4 +45,10 @@ Mitä sain selville kuvissa näkyviltä riveiltä? Ainakin sen, että portti 80 
 
 Pidin tehtävän aikana luovan tauon. Sain loppujen lopuksi tehtävän valmiiksi 6.4.2025 klo 18.00.
 
-### c)
+### c) Skriptit
+Jatkoin suoraan edellisestä tehtävästä. Tutkailin edellisessä tehtävässä esiintyvää kuvaa, jossa esiteltiin nmap-työkalun käyttöä. Huomasin kuvan avulla, että -A parametria käytettäessä seuraavat skriptit olivat automaattisesti käynnissä:
+- http-server-header; tehtävänä hakea HTTP-palvelimen otsikkotiedot.
+- http-title; tehtävänä tunnistaa oletussivun nimi.
+- http-methods; tehtävänä löytää mitä HTTP-pyyntömetodeja tuetaan (esim. HEAD).
+
+
