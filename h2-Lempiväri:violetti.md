@@ -52,3 +52,23 @@ Jatkoin suoraan edellisestä tehtävästä. Tutkailin edellisessä tehtävässä
 - http-methods; tehtävänä löytää mitä HTTP-pyyntömetodeja tuetaan (esim. HEAD).
 
 
+### d) Jäljet lokissa
+Selkeästi olen tänään laiskalla päällä. Pidin taas taukoa, jolta palasin kiltisti 6.4.2025 klo 18.54. Vilkaisin [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) ja kävin työntekoon. Siirryin virtuaalikoneen komentoriville ja tein kuvassa näkyvän asian.
+
+![image](https://github.com/user-attachments/assets/61bf5c67-34c3-4a21-94a3-3fa0824a7899)
+
+Näkymähän on pitkälti sama kuin a-kohdassa. IP-osoite on edelleen 127.0.01, mikä tarkoittaa sitä, että virtuaalikone teki pyynnöt. Huomasin GET-pyyntöjä juurisivulle, faviconille ja kuvalle. Käytetty selain oli luonnollisesti Firefox.
+
+Seuraavaksi päätin selvitellä nmapin porttiskannauksen jälkiä. Käytin selvitykseen seuraavia komentoja:
+
+    sudo grep -i nmap /var/log/apache2/access.log
+    sudo grep -i nmap /var/log/apache2/access.log | head
+
+Käytin tuota jälkimmäistä komentoa, koska ensimmäinen komento antoi hirmu pitkän listan rivejä. Koin tarpeelliseksi lyhentää rivimäärää, jotta sain otettua kuvan.
+
+![image](https://github.com/user-attachments/assets/40eff7a5-4cdb-4b92-908c-596435a4cf20)
+
+Kuten kuvasta näkyy, porttiskannauksesta jäi jälkiä Apache-lokiin. Paljastava tekijä on User-Agent-kentästä löytyvä teksti "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)". Tämä kertoo, että kyseessä olevat HTTP-pyynnöt tulivat nmapista, ei tavallisesta selaimesta. Lisäksi huomasin pari erikoista pyyntöä, esim. GET /sdk ja GET /.git/HEAD. Pyynnöt voivat liittyä nmapin skriptien etsimiin haavoittuvuuksiin.
+
+Sain tehtävän valmiiksi 6.4.2025 klo 19.14.
+
