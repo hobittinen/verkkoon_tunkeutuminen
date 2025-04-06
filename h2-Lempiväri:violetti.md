@@ -39,10 +39,10 @@ Pienen ruoka- ja lepotauon jälkeen palasin asiaan 6.4.2025 klo 16.35. Nyt oli v
 
 Kyseisillä komennoilla päivitin pakettivarastot ja asensin nmap-työkalun. Nyt pääsin todennäköisesti itse asiaan. Alla olevista kuvista näkyy nmap-työkalun käyttö.
 
-![Näyttökuva 2025-04-06 165409 p](https://github.com/user-attachments/assets/fe9aec40-6c5e-47e2-b8a6-d14b39f75763)
 ![Näyttökuva 2025-04-06 165618 r](https://github.com/user-attachments/assets/95f7220c-8065-48d3-b79a-686cff8c1a3d)
-<img width="511" alt="image" src="https://github.com/user-attachments/assets/c6479779-681c-4bf2-bd79-a6d810337100" />
 
-Mitä sain selville kuvissa näkyviltä riveiltä? Ainakin sen, että portti 80 on auki ja sillä on HTTP-palvelin. Palvelin on vastannut syn-ack-viestillä (kuuluu TCP handshakeen), mikä tarkoittaa sitä, että yhteys on luotettavasti muodostettu. Palvelimella toimii Apache HTTP Server, joka on asennettu Debianiin.
+Mitä sain selville kuvissa näkyviltä riveiltä? Ainakin sen, että portti 80 on auki ja sillä on HTTP-palvelin. Palvelin on vastannut syn-ack-viestillä (kuuluu TCP handshakeen), mikä tarkoittaa sitä, että yhteys on luotettavasti muodostettu. Palvelimella toimii Apache HTTP Server versio 2.4.62, joka on asennettu Debianiin. Nmapin NSE-skripteistä löytyi oletussivun nimi ("It works") ja tuetut HTTP-metodit, esim. POST ja OPTIONS. OS-arvio on todennäköisesti epätarkka, koska oli ainoastaan yksi portti aukinaisena.
 
-Jatkan tehtävää vähän myöhemmin.
+Pidin tehtävän aikana luovan tauon. Sain loppujen lopuksi tehtävän valmiiksi 6.4.2025 klo 18.00.
+
+### c)
