@@ -43,4 +43,6 @@ Kyseisillä komennoilla päivitin pakettivarastot ja asensin nmap-työkalun. Nyt
 ![Näyttökuva 2025-04-06 165618 r](https://github.com/user-attachments/assets/95f7220c-8065-48d3-b79a-686cff8c1a3d)
 <img width="511" alt="image" src="https://github.com/user-attachments/assets/c6479779-681c-4bf2-bd79-a6d810337100" />
 
-Mitä sain selville kuvissa näkyviltä riveiltä? 
+Mitä sain selville kuvissa näkyviltä riveiltä? Ainakin sen, että portti 80 on auki ja sillä on HTTP-palvelin. Palvelin on vastannut syn-ack-viestillä (kuuluu TCP handshakeen), mikä tarkoittaa sitä, että yhteys on luotettavasti muodostettu. Palvelimella toimii Apache HTTP Server, joka on asennettu Debianiin.
+
+Jatkan tehtävää vähän myöhemmin.
