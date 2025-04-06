@@ -29,3 +29,18 @@ Kyseisellä komennolla sain näkyville live-lokin. Valitsin sieltä kuvassa raja
 Lokiriviltä voimme huomata pyynnön tulleen IP-osoitteesta 127.0.0.1. Kyseinen osoite on virtuaalikoneen oma. Käyttäjätunnusta ei ole tunnistettu eli se on autentikoitumaton. Pyyntö on saatu aikaleiman mukaan 6.4.2025 noin klo 12. Lokiriviltä ilmenee kyseessä olleen HTTP-pyyntö: GET on metodityyppi, / on pyyntö palvelimen juurisivulle ja HTTP/1.1 protokollaversio. Pyyntötyyppiä seuraa HTTP-vastauskoodi, joka on 200. Vastauksen koko on 3380 tavua. Seuraavaksi voimme huomata viittaavan sivun olleen tyhjä. Viimeinen havainto on se, että "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" on selaimen tunnistetieto.
 
 Tehtävä tuli valmiiksi 6.4.2025 klo 14.23.
+
+
+### b) Nmapped
+Pienen ruoka- ja lepotauon jälkeen palasin asiaan 6.4.2025 klo 16.35. Nyt oli vuorossa oman weppipalvelimen porttiskannausta. Kävin tuumasta toimeen ja suuntasin virtuaalikoneelleni. Siirryin suoraan komentoriville, jonne syötin seuraavat komennot:
+
+    sudo apt-get update
+    sudo apt-get install nmap
+
+Kyseisillä komennoilla päivitin pakettivarastot ja asensin nmap-työkalun. Nyt pääsin todennäköisesti itse asiaan. Alla olevista kuvista näkyy nmap-työkalun käyttö.
+
+![Näyttökuva 2025-04-06 165409 p](https://github.com/user-attachments/assets/fe9aec40-6c5e-47e2-b8a6-d14b39f75763)
+![Näyttökuva 2025-04-06 165618 r](https://github.com/user-attachments/assets/95f7220c-8065-48d3-b79a-686cff8c1a3d)
+<img width="511" alt="image" src="https://github.com/user-attachments/assets/c6479779-681c-4bf2-bd79-a6d810337100" />
+
+Mitä sain selville kuvissa näkyviltä riveiltä? 
