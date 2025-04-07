@@ -78,6 +78,7 @@ Kuten kuvasta näkyy, porttiskannauksesta jäi jälkiä Apache-lokiin. Paljastav
 
 Sain tehtävän valmiiksi 6.4.2025 klo 19.14.
 
+
 ### e) Wire sharking
 Palasin takaisin koneen äärelle 7.4.2025 klo 11.20. Nyt olisi vuorossa Wiresharkin käyttöä, joten virtuaalikoneelle tieni vei. Siirryin tuttuun tapaan komentoriville, josta sukkuloin Wiresharkiin. Valitsin siepattavaksi Loopback:lo:n, koska se vastaa localhostia.
 
@@ -104,6 +105,7 @@ Seuraavaksi vuorossa oli pakettien tarkastelua ja suodattelua. Suodatin paketit 
 Huomasin pakettien koostuneen HTTP-protokollista (GET, OPTIONS, POST, PROFIND). Mukana oli myös muutama TCP-paketti. Löysin User-Agent-kentästä kohdan "Nmap Scripting Engine".
 
 Tehtävä saatiin valmiiksi klo 11.43.
+
 
 ### f) Net grep
 Pienen tauon jälkeen palasin koneelle 7.4.2025 klo 12.10. Aloitin tehtävän tekemisen päivittämällä pakettivarastot ja asentamalla ngrep-työkalun.
@@ -134,6 +136,7 @@ Tutkaillessani paketteja, tein seuraavia huomioita:
 
 Sain tehtävän valmiiksi 7.4.2025 klo 12.30.
 
+
 ### g) Agentti & h) 
 Aloittelin tehtävien tekoa 7.4.2025 klo 12.36. Ajattelin tehdä nämä tehtävät yhdessä, koska miksi ei. Olen itseni herra, joten teen mitä haluan. Kävin vilkaisemassa [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/), minkä jälkeen siirryin takaisin virtuaalikoneeni komentoriville. Päätin käyttää siellä Teron antamaa esimerkkikomentoa omilla lisäyksilläni.
 
@@ -144,3 +147,28 @@ Avasin Wiresharkin, jotta pystyin tarkastamaan sainko kaiken toimimaan, kuten pi
 <img width="645" alt="image" src="https://github.com/user-attachments/assets/acc4565c-8aec-40ef-b75a-b18f071ee1a2" />
 <img width="641" alt="image" src="https://github.com/user-attachments/assets/c1aae4df-b155-4c1e-8d8a-514a6f77016b" />
 
+Tämän jälkeen palasin takaisin komentoriville. Syötin seuraavan komennon:
+
+    sudo tail -f /var/log/apache2/access.log
+
+Komennon seurauksena pääsin käsiksi Apache-lokiin. Tarkastelin lokia ja totesin onnistuneeni. Ei löytynyt nmap-viitettä!
+
+![image](https://github.com/user-attachments/assets/81960329-91e3-402b-af95-aa567e39558e)
+
+Tehtävä saatiin päätökseen 7.4.2025 klo 12.57.
+
+
+### i) LoWeR ChEcK
+Palauduin ruoka- ja lepotauoiltani 7.4.2025 klo 15.06. Jännityksestä täristen kirjauduin takaisin virtuaalikoneelle. Syötin komentoriville ensimmäisen komennon.
+
+    cd /usr/share/nmap
+
+Päädyin /usr/share/nmap-hakemistoon. Saadakseni selville hakemiston sisältämät tiedostot käytin kuvassa näkyvää komentoa.
+
+![image](https://github.com/user-attachments/assets/f55ac42d-7b39-47db-89ad-229f7fd4567a)
+
+Kysyin nopeasti ChatGPT-työkalulta neuvoa, mihin tiedostoon pitäisi suunnata. Se ehdotti nselib-tiedostoa. Tosin se ei ollut tiedosto, vaan osa hakemistoa. Avasin uuden hakemiston.
+
+![image](https://github.com/user-attachments/assets/75bf4c59-6eb8-49ee-91a4-809a4f0617e1)
+
+Tutkailin uutta hakemistoa
