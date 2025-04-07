@@ -135,7 +135,7 @@ Tutkaillessani paketteja, tein seuraavia huomioita:
 Sain tehtävän valmiiksi 7.4.2025 klo 12.30.
 
 ### g) Agentti & h) 
-Aloittelin tehtävän teko 7.4.2025 klo 12.36. Kävin vilkaisemassa [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/), minkä jälkeen siirryin takaisin virtuaalikoneeni komentoriville. Päätin käyttää siellä Teron antamaa esimerkkikomentoa omilla lisäyksilläni.
+Aloittelin tehtävien tekoa 7.4.2025 klo 12.36. Ajattelin tehdä nämä tehtävät yhdessä, koska miksi ei. Olen itseni herra, joten teen mitä haluan. Kävin vilkaisemassa [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/), minkä jälkeen siirryin takaisin virtuaalikoneeni komentoriville. Päätin käyttää siellä Teron antamaa esimerkkikomentoa omilla lisäyksilläni.
 
 <img width="634" alt="image" src="https://github.com/user-attachments/assets/5c5ba949-08f7-4bea-8da2-0ac5628f6e6d" />
 
