@@ -53,7 +53,7 @@ Jatkoin suoraan edellisestä tehtävästä. Tutkailin edellisessä tehtävässä
 
 
 ### d) Jäljet lokissa
-Selkeästi olen tänään laiskalla päällä. Pidin taas taukoa, jolta palasin kiltisti 6.4.2025 klo 18.54. Vilkaisin [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) ja kävin työntekoon. Siirryin virtuaalikoneen komentoriville ja tein kuvassa näkyvän asian.
+Selkeästi olin tänään laiskalla päällä. Pidin taas taukoa, jolta palasin kiltisti 6.4.2025 klo 18.54. Vilkaisin [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) ja kävin työntekoon. Siirryin virtuaalikoneen komentoriville ja tein kuvassa näkyvän asian.
 
 ![image](https://github.com/user-attachments/assets/61bf5c67-34c3-4a21-94a3-3fa0824a7899)
 
@@ -98,3 +98,32 @@ Seuraavaksi vuorossa oli pakettien tarkastelua ja suodattelua. Suodatin paketit 
 Huomasin pakettien koostuneen HTTP-protokollista (GET, OPTIONS, POST, PROFIND). Mukana oli myös muutama TCP-paketti. Löysin User-Agent-kentästä kohdan "Nmap Scripting Engine".
 
 Tehtävä saatiin valmiiksi klo 11.43.
+
+### f) Net grep
+Pienen tauon jälkeen palasin koneelle 7.4.2025 klo 12.10. Aloitin tehtävän tekemisen päivittämällä pakettivarastot ja asentamalla ngrep-työkalun.
+
+    sudo apt-get update
+    sudo apt-get install ngrep
+
+Kun ngrep-työkalu oli saatu asennettua, pääsin itse tehtävän kimppuun. Tehtävän ideana oli siepata verkkoliikennettä ngrepillä, joten niin tein.
+
+<img width="257" alt="image" src="https://github.com/user-attachments/assets/afccfae9-edb3-458e-a619-1ae40060a778" />
+
+Kuvasta näkyykin koko komento. Ngrep on luonnollisesti työkalu, kun taas -d lo -osuus määrittelee kuunneltavan kohteen. Komennon viimeinen osuus, -i nmap, tekee kirjainkoosta merkityksettömän ja etsii "nmap"-merkkijonoja.
+
+Avasin toisen komentorivi-ikkunan, jonne syötin seuraavan komennon:
+
+    sudo nmap -T4 -vv -A -p 80 localhost
+
+Tämän jälkeen ensimmäiselle komentorivi-ikkunaani alkoi suorastaan vyöryä paketteja!
+
+<img width="632" alt="image" src="https://github.com/user-attachments/assets/c7b45d2c-0581-47ec-9de0-478cf1860fd6" />
+
+Tutkaillessani paketteja, tein seuraavia huomioita:
+- Paketit on TCP-paketteja.
+- Hostina on localhost.
+- Siepatun paketin numero on esim. #290.
+- User-Agentina on tuttuun tapaan Nmap Scripting Engine.
+- Virtuaalikoneen ja nmapin välinen liikenne: 127.0.0.1:51678 -> 127.0.0.1:80.
+
+Saub tehtävän valmiiksi 7.4.2025 klo 12.30.
