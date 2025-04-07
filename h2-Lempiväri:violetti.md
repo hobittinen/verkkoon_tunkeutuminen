@@ -182,5 +182,5 @@ En ole tämän aiheen ihmelapsi, joten kysyin taas ChatCPT:ltä apua. Työkalu e
 Seuraavaksi vuorossa oli tekemäni muutoksen testaus! Testaamiseen käytin seuraavaa komentoa:
 
     sudo nmap -T4 -A --script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)" localhost
+![image](https://github.com/user-attachments/assets/6227ef84-0d4b-4e0f-aa84-2a46a50377f1)
 
-Jatkan tehtävää myöhemmn.
