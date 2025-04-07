@@ -159,7 +159,7 @@ Tehtävä saatiin päätökseen 7.4.2025 klo 12.57.
 
 
 ### i) LoWeR ChEcK
-Palauduin ruoka- ja lepotauoiltani 7.4.2025 klo 15.06. Jännityksestä täristen kirjauduin takaisin virtuaalikoneelle. Syötin komentoriville ensimmäisen komennon.
+Palauduin ruoka- ja lepotauoiltani 7.4.2025 klo 15.36. Jännityksestä täristen kirjauduin takaisin virtuaalikoneelle. Syötin komentoriville ensimmäisen komennon.
 
     cd /usr/share/nmap
 
@@ -171,4 +171,16 @@ Kysyin nopeasti ChatGPT-työkalulta neuvoa, mihin tiedostoon pitäisi suunnata. 
 
 ![image](https://github.com/user-attachments/assets/75bf4c59-6eb8-49ee-91a4-809a4f0617e1)
 
-Tutkailin uutta hakemistoa
+Tutkailin uutta hakemistoa, kuten kuvasta näkee.
+
+![image](https://github.com/user-attachments/assets/621ddc7e-5164-4b0d-83e6-0bfb27814b9f)
+
+En ole tämän aiheen ihmelapsi, joten kysyin taas ChatCPT:ltä apua. Työkalu ehdotti http.lua -tiedoston muokkaamista, joten niin tein.
+
+![image](https://github.com/user-attachments/assets/e3d14908-cb4f-4eab-9ec4-cbd1e764e98b)
+
+Seuraavaksi vuorossa oli tekemäni muutoksen testaus! Testaamiseen käytin seuraavaa komentoa:
+
+    sudo nmap -T4 -A --script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)" localhost
+
+Jatkan tehtävää myöhemmn.
