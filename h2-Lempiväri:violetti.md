@@ -2,6 +2,12 @@
 
 ## Lukemiset
 
+### [Tuskan pyramidi](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html)
+Tuskan pyramidin idea on kuvastaa kyberturvallisuusuhkien analysoinnissa esiintyviä haasteita eri pyramidin tasoilla. Pyramidin alimmat tasot sisältävät helposti tunnistettavia uhkia, kun taas ylempänä on vaikeammin havaittavat ja torjuttavat hyökkäykset.
+
+### [Timanttimalli](https://kravensecurity.com/diamond-model-analysis/)
+Timanttimalli on uhkamallinnus, jossa tarkastellaan kyberturvallisuushyökkäyksiä neljän pääkomponentin kautta: hyökkääjä, hyökkäys, kohde ja seuraus. Mallin tarkoituksena on auttaa analysoimaan ja ymmärtämään, miten kyseiset komponentit vuorovaikuttuvat keskenään.
+
 
 ## Tehtävät
 
@@ -128,7 +134,7 @@ Tutkaillessani paketteja, tein seuraavia huomioita:
 
 Sain tehtävän valmiiksi 7.4.2025 klo 12.30.
 
-### g) Agentti
+### g) Agentti & h) 
 Aloittelin tehtävän teko 7.4.2025 klo 12.36. Kävin vilkaisemassa [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/), minkä jälkeen siirryin takaisin virtuaalikoneeni komentoriville. Päätin käyttää siellä Teron antamaa esimerkkikomentoa omilla lisäyksilläni.
 
 <img width="634" alt="image" src="https://github.com/user-attachments/assets/5c5ba949-08f7-4bea-8da2-0ac5628f6e6d" />
