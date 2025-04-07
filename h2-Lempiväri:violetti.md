@@ -72,3 +72,29 @@ Kuten kuvasta näkyy, porttiskannauksesta jäi jälkiä Apache-lokiin. Paljastav
 
 Sain tehtävän valmiiksi 6.4.2025 klo 19.14.
 
+### e) Wire sharking
+Palasin takaisin koneen äärelle 7.4.2025 klo 11.20. Nyt olisi vuorossa Wiresharkin käyttöä, joten virtuaalikoneelle tieni vei. Siirryin tuttuun tapaan komentoriville, josta sukkuloin Wiresharkiin. Valitsin siepattavaksi Loopback:lo:n, koska se vastaa localhostia.
+
+<img width="515" alt="image" src="https://github.com/user-attachments/assets/56ec83ad-25ab-4659-8b0d-932ece117432" />
+
+Aloitin sieppauksen. Porttiskannauksen hoidin komentorivillä jo ennestään tutulla komennolla.
+
+    sudo nmap -T4 -vv -A -p 80 localhost
+
+Kuvassa on todistusaineistoa siitä, että sain kaapattua paketteja.
+
+<img width="519" alt="image" src="https://github.com/user-attachments/assets/68381cae-35f9-490b-a914-89e48474ca14" />
+
+Tehtävänannon mukaisesti tallensin pcap-tiedoston.
+
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/b67bdf0d-e4a6-4f53-a0e3-319dfcf74ea7" />
+
+Seuraavaksi vuorossa oli pakettien tarkastelua ja suodattelua. Suodatin paketit sillä perusteella, että ne sisälsivät "nmap". Suodatukseen käytin lisäämällä Wiresharkin kenttään seuraavan komennon.
+
+    frame contains "nmap"
+
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/3b75d310-5c24-473d-a5cc-bb9f7f474a56" />
+
+Huomasin pakettien koostuneen HTTP-protokollista (GET, OPTIONS, POST, PROFIND). Mukana oli myös muutama TCP-paketti. Löysin User-Agent-kentästä kohdan "Nmap Scripting Engine".
+
+Tehtävä saatiin valmiiksi klo 11.43.
