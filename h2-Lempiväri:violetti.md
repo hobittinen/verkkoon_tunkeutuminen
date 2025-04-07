@@ -126,4 +126,15 @@ Tutkaillessani paketteja, tein seuraavia huomioita:
 - User-Agentina on tuttuun tapaan Nmap Scripting Engine.
 - Virtuaalikoneen ja nmapin välinen liikenne: 127.0.0.1:51678 -> 127.0.0.1:80.
 
-Saub tehtävän valmiiksi 7.4.2025 klo 12.30.
+Sain tehtävän valmiiksi 7.4.2025 klo 12.30.
+
+### g) Agentti
+Aloittelin tehtävän teko 7.4.2025 klo 12.36. Kävin vilkaisemassa [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/), minkä jälkeen siirryin takaisin virtuaalikoneeni komentoriville. Päätin käyttää siellä Teron antamaa esimerkkikomentoa omilla lisäyksilläni.
+
+<img width="634" alt="image" src="https://github.com/user-attachments/assets/5c5ba949-08f7-4bea-8da2-0ac5628f6e6d" />
+
+Avasin Wiresharkin, jotta pystyin tarkastamaan sainko kaiken toimimaan, kuten piti. Wiresharkissa suodatin näkyville vain nmap-viittauksen sisältämät paketit.
+
+<img width="645" alt="image" src="https://github.com/user-attachments/assets/acc4565c-8aec-40ef-b75a-b18f071ee1a2" />
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/c1aae4df-b155-4c1e-8d8a-514a6f77016b" />
+
