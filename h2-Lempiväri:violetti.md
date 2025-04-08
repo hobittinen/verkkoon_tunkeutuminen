@@ -184,3 +184,6 @@ Seuraavaksi vuorossa oli tekemäni muutoksen testaus! Testaamiseen käytin seura
     sudo nmap -T4 -A --script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)" localhost
 ![image](https://github.com/user-attachments/assets/6227ef84-0d4b-4e0f-aa84-2a46a50377f1)
 
+Testailin lopputulosta Wiresharkilla. ngrep-työkalulla
+
+![image](https://github.com/user-attachments/assets/cf13f6b0-abdc-435c-8265-4bc95648f365)
