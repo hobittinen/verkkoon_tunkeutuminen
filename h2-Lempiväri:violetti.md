@@ -9,6 +9,7 @@ Tuskan pyramidin idea on kuvastaa kyberturvallisuusuhkien analysoinnissa esiinty
 Timanttimalli on uhkamallinnus, jossa tarkastellaan kyberturvallisuushyökkäyksiä neljän pääkomponentin kautta: hyökkääjä, hyökkäys, kohde ja seuraus. Mallin tarkoituksena on auttaa analysoimaan ja ymmärtämään, miten kyseiset komponentit vuorovaikuttuvat keskenään.
 
 
+
 ## Tehtävät
 
 ### Kaikissa tehtävissä on käytetty lähteenä Tero Karvisen verkkosivuilta löytyvää [kurssisivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/)
