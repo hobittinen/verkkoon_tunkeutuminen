@@ -159,7 +159,7 @@ Tehtävä saatiin päätökseen 7.4.2025 klo 12.57.
 
 
 ### i) LoWeR ChEcK
-Palauduin ruoka- ja lepotauoiltani 7.4.2025 klo 15.36. Jännityksestä täristen kirjauduin takaisin virtuaalikoneelle. Syötin komentoriville ensimmäisen komennon.
+Palauduin ruoka- ja lepotauoiltani 7.4.2025 klo 15.36. Kävin vähän Internetissä vilkuilemassa apuja tähän tehtävään. Pienen metsästyksen jälkeen löysin selventävän [verkkosivun](https://nmap.org/nsedoc/scripts/http-useragent-tester.html). Jännityksestä täristen kirjauduin takaisin virtuaalikoneelle. Syötin komentoriville ensimmäisen komennon.
 
     cd /usr/share/nmap
 
@@ -190,3 +190,16 @@ Testailin lopputulosta Wiresharkilla ja ngrep-työkalulla.
 ![image](https://github.com/user-attachments/assets/16667985-096a-48d1-a827-e244cf19f56b)
 
 Kaikki näytti olevan hyvin, joten päätin tehtävän 7.4.2025 klo 16.20.
+
+
+## Lähteet
+
+### Kurssisivu
+Karvinen, T. (2025). Verkkoon tunkeutuminen ja tiedustelu. Haettu 6.4.2025 osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+### Lukemiset
+Detect Respond. (1.3.2013). The Pyramid of Pain. Haettu 7.4.2025 osoitteesta https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
+Kraven Security. (15.4.2024). Diamond Model of Intrusion Analysis. Haettu 7.4.2025 osoitteesta https://kravensecurity.com/diamond-model-analysis/
+
+### Nmap
+Nmap. http-useragent-tester – Nmap Scripting Engine Documentation. Haettu 7.4.2025 osoitteesta https://nmap.org/nsedoc/scripts/http-useragent-tester.html
