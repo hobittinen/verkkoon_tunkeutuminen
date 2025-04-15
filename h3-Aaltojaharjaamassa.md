@@ -57,7 +57,7 @@ Sain tehtävän valmiiksi klo 12.18.
 
 
 ### d) Too compex 16?
-Reippaana jatkoin tähän tehtävään heti edellisen tehtävän valmistuttua. Kävin nopeasti [kurssisivulla](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) katsomassa, oliko tähän tehtävään jotain hyvää vinkkiä tarjolla. Heti löysin tehtävään tarvittavan tiedoston, jonka luonnollisesti latasin. Tietenkin sieltä löytyi myös vinkki jos toinenkin, joten komentoriville tieni vei. Ensimmäisenä selvitin, löytyykö äsken lataamani tiedosto Downloads-hakemistosta.
+Reippaana jatkoin tähän tehtävään heti edellisen tehtävän valmistuttua. Kävin nopeasti [kurssivulla](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) katsomassa, oliko tähän tehtävään jotain hyvää vinkkiä tarjolla. Heti löysin tehtävään tarvittavan tiedoston, jonka luonnollisesti latasin. Tietenkin sieltä löytyi myös vinkki jos toinenkin, joten komentoriville tieni vei. Ensimmäisenä selvitin, löytyykö äsken lataamani tiedosto Downloads-hakemistosta.
 
 <img width="569" alt="image" src="https://github.com/user-attachments/assets/46bc9f5d-a1c3-4f61-aad9-bdabc6b7a3f0" />
 
@@ -80,3 +80,48 @@ Sain selville seuraavat asiat:
 - Yksiköt: 0 & 3
 
 Tehtävä tuli päätökseensä klo 12.44.
+
+
+### e) Ultimate
+Palauduin takaisin tehtävien pariin 15.4.2025 klo 18.13. Tuttuun tapaan [kurssivua](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) käytiin vilkaisemassa ennen kuin siirryin virtuaalikoneelle. Tosin jouduin nopeasti palautumaan takaisin "oikean" koneen selaimelle, koska eihän minulla ollut hajuakaan siitä, miten URH asennetaan!
+
+Etsin tietoa pienoisen hetken internetistä, kunnes löysin [ohjeen](https://snapcraft.io/install/urh/debian). Ohjeen luettuani palauduin takaisin virtuaalikoneelle. Aloitin itse tehtävän tekemisen asentamalla URH:n seuraavilla komennoilla.
+
+    sudo apt update
+    sudo apt install snapd
+    sudo snap install snapd
+    sudo snap install urh
+
+Kun URH oli saatu asennettua, vuorossa oli käydä lataamassa analysoitava tiedosto. Siirryin virtuaalikoneen selaimeen, jossa surffasin [kurssivulle](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/). Sieltä nappasin tähän tehtävään tarvittavan tiedoston, minkä jälkeen palauduin takaisin komentoriville. Avasin URH:n seuraavalla komennolla.
+
+    snap run urh
+
+Eteeni aukesi kuvassa näkyvä näkymä.
+
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/21676971-61ce-44b4-a89b-1a2714bd1854" />
+
+Seuraavaksi avasin File-menun ja valitsin sieltä "Open"-kohdan. Uuden välilehden aukeuduttua valitsin äsken lataamani tiedoston. Näkymä näytti tältä:
+
+<img width="633" alt="image" src="https://github.com/user-attachments/assets/69808089-8cb1-4e5b-952c-45cfdff7597f" />
+
+URH ei pyytänyt minulta mitään tietoja, vaan tiedosto sisälsi kaiken jo valmiiksi. Se osasi siis tulkita taajuuden tiedostonimestä. Tehtävä tuli valmiiksi klo 19.00.
+
+
+### f) Yleiskuva
+En pitänyt taukoa edellisen tehtävän jälkeen, joten aloitin tämän tehtävän tekemisen 15.4.2025 klo 19.00. Tarkastelin edellisessä tehtävässä avattua tiedostoa tarkemmin.
+- Taajuus: 433,912 MHz
+- Näytteenottotaajuus: 2 MSps
+- Kesto: 5,49s
+- Näytteen ulkonäkö: Signaali pomppaa hetkeksi ylös, kunnes taas hiljenee. Huomasin kolme pomppausta, jotka kestivät hetken ennen kuin hiljeni.
+
+Sain tehtävän valmiiksi klo 19.15.
+
+
+### g) Bittistä
+Päätin rykäistä vielä tämän viimeisen tehtävän samaan syssyyn. URH-näkymässä tarkastin kaiken olevan ok eli modulaation olevan ASK. Tämän jälkeen klikkasin "Autodetect parameters"-kohtaa, jotta pääsin tehtävässä eteenpäin. Tämä sai aikaan kuvassa näkyvän tilanteen.
+
+<img width="494" alt="image" src="https://github.com/user-attachments/assets/cfadbd7b-dcf8-4a75-8b03-aff76f5b6635" />
+
+Näytteenottotaajuus oli 2 MSps ja sampleja 500. Nopealla laskutoimituksella sain raakabitin pituudeksi 250 µs eli 250 mikrosekuntia per bitti. Se on erittäin nopea, ottaen huomioon ihmisen silmänräpäytyksen kestävän noin 100ms.
+
+Tehtävä saatiin päätökseen klo 19.30.
