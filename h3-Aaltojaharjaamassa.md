@@ -2,6 +2,23 @@
 
 ## Tiivistelmät
 
+### [Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs](https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s)
+- Ennen kuin alettiin tehdä mitään, tarkistettiin taajuus.
+- Kaukosäädintä käytettäessä sen lähettämä taajuus näkyi heti.
+- Kaavion keskiosasta/huippukohdasta ei saada mitään irti.
+- Modulaation tulee olla oikea, videon tapauksessa se oli ASK.
+- Bitin pituuden ja keston pitäisi olla suht samat.
+
+
+### [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
+- Työkaluna oli rtl_433, joka tunnisti laitteen nimellä Dexus-TH.
+- Anturi lähetti 36 bittiä 12 kertaa.
+- Käytössä oli ppm-modulaatio.
+- URH:lla purettiin signaali tarkemmin.
+- Signaali käytti ASK / OOK (on-off keying) -modulaatiota.
+- Lähetysväli oli noin 56.75 sekuntia.
+
+
 
 ## Tehtävät
 
@@ -125,3 +142,24 @@ Päätin rykäistä vielä tämän viimeisen tehtävän samaan syssyyn. URH-näk
 Näytteenottotaajuus oli 2 MSps ja sampleja 500. Nopealla laskutoimituksella sain raakabitin pituudeksi 250 µs eli 250 mikrosekuntia per bitti. Se on erittäin nopea, ottaen huomioon ihmisen silmänräpäytyksen kestävän noin 100ms.
 
 Tehtävä saatiin päätökseen klo 19.30.
+
+
+
+## Lähteet
+
+### Kurssisivu
+Karvinen, T. (2025). Verkkoon tunkeutuminen ja tiedustelu. Haettu 16.4.2025 osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+
+### Lukemiset
+OneTransistor. (January 27, 2024). Decode 433.92 MHz weather station data. Haettu 16.4.2025 osoitteesta https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html
+
+YouTube. (18.1.2019). Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. Haettu 16.4.2025 osoitteesta https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s
+
+
+### Tehtävät
+Karvinen, T. (2025). Verkkoon tunkeutuminen ja tiedustelu. Haettu 16.4.2025 osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+Merbanan. rtl_433 GitHub-projekti. Haettu 16.4.2025 osoitteesta https://github.com/merbanan/rtl_433/
+
+Snapcraft. Install URH on Debian. Haettu 16.4.2025 osoitteesta https://snapcraft.io/install/urh/debian
