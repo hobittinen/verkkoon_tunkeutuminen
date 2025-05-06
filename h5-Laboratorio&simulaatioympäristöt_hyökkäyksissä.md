@@ -42,7 +42,23 @@ Palasin takaisin evilginx-työkalun pariin. Tosin ensin paluuta kävin ChatGPT:n
 
 Kuten kuvasta huomataan, meni vähän v*tuiksi. Eikun vaan uusiksi tekemään! Tein alla olevassa kuvassa näkyvät muutokset.
 
+![image](https://github.com/user-attachments/assets/c2879ce5-ae23-41e9-8715-af58e6cab6d6)
 
+Onnistumisen ilossa siirryin eteen päin. Piti tehdä url-osoite, joka hoitaa liikenteen huijaamisen. Kysyin tähänkin apua ChatGPT:ltä, joka ystävällisesti antoi minulle oikein hyvän ja selvän ohjeen! Alkuun tein uuden tiedoston, jonka sisällön näkee alla olevasta kuvasta.
+
+![image](https://github.com/user-attachments/assets/5e958e65-ec1b-4fa1-93b6-8bb20da452cd)
+
+Tiedoston luomisen jälkeen käynnistin HTTP-palvelimen Pythonin avulla.
+
+    sudo python3 -m http.server 8080
+
+Jännittyneenä siirryin virtuaalikoneen selaimelle. Tärisevin käsin syötin sinne seuraavanlaisen osoitteen.
+
+    http://localhost:8080/hobittinen.html
+
+Ja lopputulokseksi sain tällaisen kaunokaisen!
+
+![image](https://github.com/user-attachments/assets/08ea9787-6587-4157-966f-3a1bdbda2cae)
 
 
 
