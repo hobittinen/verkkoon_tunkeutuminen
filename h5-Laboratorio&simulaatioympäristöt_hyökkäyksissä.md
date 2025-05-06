@@ -60,7 +60,13 @@ Ja lopputulokseksi sain tällaisen kaunokaisen!
 
 ![image](https://github.com/user-attachments/assets/08ea9787-6587-4157-966f-3a1bdbda2cae)
 
+Nopeasti huomasin tämänkin yrityksen menneen v*tuiksi. Enhän pysty käyttämään tuota sivua ja evilginx-työkalua samaan aikaan! Taas käännyin ChatGPT:n puoleen, joka suositteli alkuun tekemään uuden tiedoston, jonka sisältö näkyy kuvassa.
 
+![image](https://github.com/user-attachments/assets/69d94fd4-4d17-4374-927c-f0270a61d265)
+
+Vaihteeksi palauduin takaisin evilginx-työkalun pariin. Siellä loin uuden urlin, kuten kuvasta huomaa.
+
+![image](https://github.com/user-attachments/assets/4a39d55c-a5fa-4e71-ac71-fbad565ac6c3)
 
 
 ### b) TCP SYN-Flood hyökkäys
@@ -76,3 +82,15 @@ Seuraavaksi oli hyökkäyksen vuoro! Tein sen seuraavalla komennolla:
 
     h1 hping3 -S -p 80 --flood h2
 
+Tähän se jäikin. Yritin lisäksi pingailla noita osoitteita, mutta eipä ne löytäneet toisiaan :))) Jospa jossain välissä keksisi ratkaisun tähän. Nyt sitä ideaa ei valitettavasti tullut.
+
+
+## Lähteet
+
+Evilginx-dokumentaatio (2025). Evilginx2:n virallinen dokumentaatio. Haettu 7.5.2025 osoitteesta https://help.evilginx.com/
+
+Hping3-ohjeet (2025). Hping3:n virallinen dokumentaatio. Haettu 7.5.2025 osoitteesta http://www.hping.org/
+
+Kurssin Moodle-sivut (2025). Laboratorio- ja simulaatioympäristöt hyökkäyksissä -materiaali.
+
+Mininet-ympäristön dokumentaatio (2025). Mininetin virallinen dokumentaatio. Haettu 7.5.2025 osoitteesta http://mininet.org/
