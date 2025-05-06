@@ -68,6 +68,14 @@ Vaihteeksi palauduin takaisin evilginx-työkalun pariin. Siellä loin uuden urli
 
 ![image](https://github.com/user-attachments/assets/4a39d55c-a5fa-4e71-ac71-fbad565ac6c3)
 
+Avasin tämänkin linkin Firefoxissa. Ainoa vain, että nyt ei mennyt kaikki putkeen.
+
+![image](https://github.com/user-attachments/assets/a3db77e5-ddf5-4553-aac0-ff4308b2cffd)
+
+Rehellisesti sanottuna en vain jaksanut enää alkaa selvittämään, mikä nyt on vialla. Siirryin seuraavaan tehtävään.
+
+
+
 
 ### b) TCP SYN-Flood hyökkäys
 Päätin tässä tehtävässä kysyä apua rakkaalta ystävältäni ChatGPT:ltä. Se antoi jälleen arvokkaan ohjenuoran, jota lähdin seuraamaan. Alkuun loin Mininet-ympäristön seuraavalla komennolla:
