@@ -2,6 +2,8 @@
 
 ## Tehtävät
 
+### Tehtävissä on käytetty lähteinä kurssin Moodle-sivua, [evilginx-dokumenttia](https://help.evilginx.com/) ja edellisen tunnin tuntitehtäviä!
+
 ### a) Evilginx2
 Asensin evilginx2-työkalun. Aloitin asennuksen päivittämällä pakettilistat ja asentamalla saatavilla olevat päivitykset seuraavilla komennoilla.
 
