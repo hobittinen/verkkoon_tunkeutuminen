@@ -36,7 +36,14 @@ Seuraavaksi vuorossa oli työkalun TURVALLINEN käyttökokeilu. En halua joutua 
 
 ![image](https://github.com/user-attachments/assets/1e09554e-b274-407d-9919-f24fff5a79b5)
 
-Palasin takaisin evilginx-työkalun pariin.
+Palasin takaisin evilginx-työkalun pariin. Tosin ensin paluuta kävin ChatGPT:n juttusilla kyselemässä mitä pitäisi tehdä. Vastauksen saamisen jälkeen määrittelin uudelleen domainin ja ipv4-osoitteen. Sen lisäksi määritin example phishletsin localtestiksi, koska miksikäs ei. Halusin kokeilla tätäkin muutosta.
+
+![image](https://github.com/user-attachments/assets/205745fa-73a8-4b9f-ba0e-413ba2b8f544)
+
+Kuten kuvasta huomataan, meni vähän v*tuiksi. Eikun vaan uusiksi tekemään! Tein alla olevassa kuvassa näkyvät muutokset.
+
+
+
 
 
 
