@@ -34,8 +34,9 @@ Kuten kuvasta pystyi huomaamaan, evinginxillä ei ollut hakemistosijaintia phisl
 
 Seuraavaksi vuorossa oli työkalun TURVALLINEN käyttökokeilu. En halua joutua nuorena ja kauniina vankilaan, joten tein kokeilun localhostilla. Aloitin kokeilun muokkaamalla /etc/hosts -tiedostoa kuvassa näkyvällä tavalla.
 
-![image](https://github.com/user-attachments/assets/ef938550-21b7-41af-9cbe-5b993553a53b)
+![image](https://github.com/user-attachments/assets/1e09554e-b274-407d-9919-f24fff5a79b5)
 
+Palasin takaisin evilginx-työkalun pariin.
 
 
 
