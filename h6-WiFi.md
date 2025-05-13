@@ -25,6 +25,9 @@ Harjoituksen jälkeen uskoni WLANiin vähän horjui. Luulin sen olevan vahvempi,
 ## Lähteet
 
 GitHub - wifi_db (2025). Haettu 13.5.2025 osoitteesta https://github.com/r4ulcl/wifi_db
+
 Kurssin Moodle-sivut (2025). WiFi -materiaali.
+
 WiFiChallenge Lab - README (2025). Haettu 13.5.2025 osoitteesta https://lab.wifichallenge.com/README
+
 WiFiChallenge Lab - Challenges (2025). Haettu 13.5.2025 osoitteesta https://lab.wifichallenge.com/challenges
